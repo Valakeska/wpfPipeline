@@ -24,10 +24,10 @@ jobs:
       run: nuget install StyleCop.MSBuild -Version 6.1.0 -OutputDirectory packages
 
     - name: Restore NuGet packages
-      run: msbuild /t:Restore SocailNetSchool.sln
+      run: dotnet build  /t:Restore SocailNetSchool.sln
 
     - name: Build solution
-      run: msbuild /t:Build /p:Configuration=Release /p:Platform="Any CPU" SocailNetSchool.sln
+      run: dotnet build  /t:Build /p:Configuration=Release /p:Platform="Any CPU" SocailNetSchool.sln
 
     - name: Run StyleCop
-      run: msbuild /t:StyleCop SocailNetSchool.sln
+      run: dotnet build  /t:StyleCop SocailNetSchool.sln
