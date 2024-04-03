@@ -1,0 +1,20 @@
+﻿<Window x:Class="SocailNetSchool.AdminMenu.AdminMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SocailNetSchool.AdminMenu"
+        mc:Ignorable="d"
+        Title="AdminMainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Click="UserCRUDbtn" Content="Пользователь" Margin="185,198,498,0" Height="25" VerticalAlignment="Top"/>
+        <Button Click="RoleCRUDbtn" Content="Роль" Margin="185,157,498,0" Height="25" VerticalAlignment="Top"/>
+        <Button Click="ClassCRUDbtn" Content="Классы" Margin="185,240,499,0" Height="25" VerticalAlignment="Top"/>
+        <Button Click="ProfilesCRUDbtn" Content="Профили" Margin="185,284,499,0" Height="25" VerticalAlignment="Top"/>
+        <Button Click="VisitingEventCRUDbtn" Content="Посещение мероприятия" Margin="323,198,303,0" Height="25" VerticalAlignment="Top"/>
+        <Button Click="ChatClassCRUDbtn" Content="Чаты класса" Margin="323,240,361,0" Height="25" VerticalAlignment="Top"/>
+        <Button Click="MembertClassCRUDDbtn" Content="Участники класса-Класс" Margin="323,157,323,0" Height="25" VerticalAlignment="Top"/>
+        <Button Click="ExitBTN" Content="Выйти" Margin="10,399,673,0" Height="25" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

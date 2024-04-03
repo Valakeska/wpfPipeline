@@ -1,0 +1,23 @@
+﻿<Window x:Class="SocailNetSchool.AdminMenu.CRUDVisitingEvent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SocailNetSchool.AdminMenu"
+        mc:Ignorable="d"
+        Title="CRUDVisitingEvent" Height="500" Width="800">
+    <Grid>
+        <DataGrid x:Name="DGadmin" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="62,27,62,0" Height="180" VerticalAlignment="Top"/>
+        <Button Click="AddDataDGbtn" Content="Добавить" HorizontalAlignment="Left" Margin="252,396,0,0" VerticalAlignment="Top" Height="28" Width="95"/>
+        <Button Click="UpdateDataDGbtn" Content="Изменить" HorizontalAlignment="Center" Margin="0,396,0,0" VerticalAlignment="Top" Height="28" Width="96"/>
+        <Button Click="DeleteDataDGbtn" Content="Удалить" HorizontalAlignment="Left" Margin="453,396,0,0" VerticalAlignment="Top" Height="28" Width="95" />
+        <Button Click="ExitBTN" Content="Назад" HorizontalAlignment="Left" Margin="682,396,0,0" VerticalAlignment="Top" Height="28" Width="95" />
+        <Label Content="Пользователь" HorizontalAlignment="Left" Margin="469,300,0,0" VerticalAlignment="Top" FontSize="15"/>
+
+
+        <ComboBox x:Name="CBUser" HorizontalAlignment="Left" Margin="469,331,0,0" VerticalAlignment="Top" Width="192" FontSize="20" Height="29" Loaded="CBUser_Loaded" />
+        <Label Content="Мероприятие" HorizontalAlignment="Left" Margin="122,300,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <ComboBox x:Name="CBEvent" HorizontalAlignment="Left" Margin="122,331,0,0" VerticalAlignment="Top" Width="192" FontSize="20" Height="29" Loaded="CBEvent_Loaded" />
+
+    </Grid>
+</Window>
