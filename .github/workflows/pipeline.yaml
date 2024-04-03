@@ -18,10 +18,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Install .NET Framework 4.7.2
-      run: |
-        choco install dotnet-472-devpack --yes --force
-        RefreshEnv.cmd
+    
 
     - name: Install StyleCop.MSBuild
       run: nuget install StyleCop.MSBuild -Version 6.1.0 -OutputDirectory packages
